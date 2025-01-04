@@ -56,15 +56,14 @@ SELECT type, COUNT(*) as total_Number
   rating
   FROM
   (
-  SELECT
-  type,
-  rating,
-  count(*),
-  RANK()OVER(PARTITION BY type ORDER BY COUNT(*) DESC)AS ranking
-  FROM netflix
-  GROUP BY 1,2
+    SELECT
+    type, rating,
+    count(*),
+    RANK()OVER(PARTITION BY type ORDER BY COUNT(*) DESC)AS ranking
+    FROM netflix
+    GROUP BY 1,2
   ) AS t1
-  WHERE ranking = 1;
+ WHERE ranking = 1;
 ```
 
 **Objective:** Identify the most frequently occurring rating for each type of content.
