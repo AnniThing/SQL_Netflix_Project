@@ -1,2 +1,2 @@
 # Netflix Movies and TV Shows Data Analysis Using SQL
-![NetFLix Logo]{https://en.m.wikipedia.org/wiki/File:Logonetflix.png}
+![NetFLix Logo]{https://github.com/AnniThing/SQL_Netflix_Project/blob/main/Netflix-logo}
